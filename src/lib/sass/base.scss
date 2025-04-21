@@ -1,0 +1,29 @@
+@use "fixed_colors";
+@use "ansi";
+@use "code-block";
+@use "pulldown_latex";
+
+/* Latin Modern Roman has various sizes. We use the generic name
+   "Latin Modern Roman" for the local versions and "LMRoman12" for the Web font.
+*/
+@font-face {
+    font-family: LMRoman12;
+    src: url("@home-base-fonts/lmroman12-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: LMRoman12;
+    src: url("@home-base-fonts/lmroman12-bold.woff2") format("woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: LMRoman12;
+    src: url("@home-base-fonts/lmroman12-italic.woff2") format("woff2");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Latin Modern Math;
+    src: url("@home-base-fonts/latinmodern-math.woff2") format("woff2");
+}

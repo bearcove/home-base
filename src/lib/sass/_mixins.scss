@@ -1,0 +1,28 @@
+$small-bp-under: 699px;
+$medium-bp-over: 700px;
+$medium-large-bp-over: 950px;
+$large-bp-over: 1400px;
+
+@mixin when-small {
+  @media (max-width: $small-bp-under) {
+    @content;
+  }
+}
+
+@mixin when-medium {
+  @media (min-width: $medium-bp-over) {
+    @content;
+  }
+}
+
+@mixin when-medium-large {
+  @media (min-width: $medium-large-bp-over) {
+    @content;
+  }
+}
+
+@mixin when-large {
+  @media (min-width: $large-bp-over) {
+    @content;
+  }
+}

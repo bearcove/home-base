@@ -1,0 +1,132 @@
+@use "catppuccin";
+
+.home-ansi i {
+    // ANSI colors
+    &.fg-blk {
+        color: var(--fg-blk);
+    }
+
+    &.fg-red {
+        color: var(--fg-red);
+    }
+
+    &.fg-grn {
+        color: var(--fg-grn);
+    }
+
+    &.fg-ylw {
+        color: var(--fg-ylw);
+    }
+
+    &.fg-blu {
+        color: var(--fg-blu);
+    }
+
+    &.fg-mag {
+        color: var(--fg-mag);
+    }
+
+    &.fg-cyn {
+        color: var(--fg-cyn);
+    }
+
+    &.fg-wht {
+        color: var(--fg-wht);
+    }
+
+    &.fg-lblk {
+        color: var(--fg-blk);
+    }
+
+    &.fg-lred {
+        color: var(--fg-red);
+    }
+
+    &.fg-lgrn {
+        color: var(--fg-grn);
+    }
+
+    &.fg-lyel {
+        color: var(--fg-ylw);
+    }
+
+    &.fg-lblu {
+        color: var(--fg-blu);
+    }
+
+    &.fg-lmag {
+        color: var(--fg-mag);
+    }
+
+    &.fg-lcyn {
+        color: var(--fg-cyn);
+    }
+
+    &.fg-lwht {
+        color: var(--fg-wht);
+    }
+
+    &.bg-blk {
+        background-color: var(--bg-blk);
+    }
+
+    &.bg-red {
+        background-color: var(--bg-red);
+    }
+
+    &.bg-grn {
+        background-color: var(--bg-grn);
+    }
+
+    &.bg-ylw {
+        background-color: var(--bg-ylw);
+    }
+
+    &.bg-blu {
+        background-color: var(--bg-blu);
+    }
+
+    &.bg-mag {
+        background-color: var(--bg-mag);
+    }
+
+    &.bg-cyn {
+        background-color: var(--bg-cyn);
+    }
+
+    &.bg-wht {
+        background-color: var(--bg-wht);
+    }
+
+    &.bg-lblk {
+        background-color: var(--bg-blk);
+    }
+
+    &.bg-lred {
+        background-color: var(--bg-red);
+    }
+
+    &.bg-lgrn {
+        background-color: var(--bg-grn);
+    }
+
+    &.bg-lyel {
+        background-color: var(--bg-ylw);
+    }
+
+    &.bg-lblu {
+        background-color: var(--bg-blu);
+    }
+
+    &.bg-lmag {
+        background-color: var(--bg-mag);
+    }
+
+    &.bg-lcyn {
+        background-color: var(--bg-cyn);
+    }
+
+    &.bg-lwht {
+        background-color: var(--bg-wht);
+    }
+}

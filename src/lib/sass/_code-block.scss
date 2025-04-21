@@ -1,0 +1,242 @@
+@use "mixins";
+
+figure.code-block {
+    position: relative;
+
+    .language-tag {
+        --fake-margin: 0.2rem;
+        font-family: var(--font-symbol);
+        width: auto;
+        color: light-dark(#6f8399, #e7e7e7);
+        font-size: 1rem;
+        position: absolute;
+        top: var(--fake-margin);
+        right: calc(var(--fake-margin) + 0.2rem);
+        padding: 0.15em;
+    }
+
+    &,
+    code {
+        display: block;
+        width: 100%;
+    }
+
+    &[data-lang="term"] {
+        // force dark mode for terminals
+        color-scheme: dark;
+
+        // terminals need to be more opaque in light mode since the background is light
+        @media (prefers-color-scheme: light) {
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        // in dark mode, the background is already dark, so we can get away with more transparency
+        @media (prefers-color-scheme: dark) {
+            background: var(--code-bg-color-dark);
+        }
+    }
+
+    &:not([data-lang="term"]) {
+        background: var(--code-bg-color);
+    }
+
+    pre {
+        padding: 0;
+        margin: 0;
+    }
+
+    code {
+        padding: 0.6rem;
+        color: var(--catppuccin-text);
+        border: 1px solid var(--code-border-color);
+        overflow-x: auto;
+        position: relative;
+        text-size-adjust: none;
+        font-weight: 100;
+        font-size: var(--font-code-size);
+        line-height: 1.4;
+        white-space: pre;
+        tab-size: 2;
+
+        @include mixins.when-small {
+            padding: 0.4rem;
+            font-size: 0.8rem;
+        }
+
+        // Base style for all inline elements
+        i {
+            font-style: normal;
+
+            &.b {
+                // bold weight
+                font-weight: bold;
+                filter: brightness(1.16);
+            }
+
+            &.l {
+                // faint weight
+                filter: brightness(0.69);
+            }
+
+            &.u {
+                text-decoration: underline;
+            }
+
+            &.st {
+                text-decoration: line-through;
+            }
+
+            &.i {
+                font-style: italic;
+            }
+
+            &.key {
+                text-transform: uppercase;
+                border: 1px solid;
+                padding: 0.1rem 0.2rem;
+                margin: 0 0.3rem;
+                font-size: 0.75rem;
+                border-radius: 0.2rem;
+                vertical-align: middle;
+                background: var(--catppuccin-surface1);
+                border-color: var(--catppuccin-subtext1);
+                color: var(--catppuccin-text);
+            }
+
+            // Syntax highlighting colors
+            // constant and number
+            &.hh1,
+            &.hh23 {
+                color: var(--catppuccin-peach);
+            }
+
+            // function
+            &.hh3 {
+                color: var(--catppuccin-sapphire);
+            }
+
+            // keyword and function.builtin
+            &.hh4,
+            &.hh2 {
+                color: var(--catppuccin-mauve);
+                font-weight: 120;
+            }
+
+            // operator
+            &.hh5 {
+                color: var(--catppuccin-sky);
+            }
+
+            // property
+            &.hh6 {
+                color: var(--catppuccin-teal);
+            }
+
+            // string and string.special
+            &.hh10,
+            &.hh11 {
+                color: var(--catppuccin-green);
+            }
+
+            // type and type.builtin
+            &.hh13,
+            &.hh14 {
+                color: var(--catppuccin-yellow);
+            }
+
+            // variable
+            &.hh15 {
+                color: var(--catppuccin-text);
+            }
+
+            // variable.builtin
+            &.hh16 {
+                color: var(--catppuccin-red);
+            }
+
+            // variable.parameter
+            &.hh17 {
+                color: var(--catppuccin-maroon);
+            }
+
+            // comment, punctuation
+            &.hh18,
+            &.hh7 {
+                color: var(--catppuccin-subtext1);
+            }
+
+            // punctuation.delimiter, and punctuation.bracket
+            &.hh9,
+            &.hh8 {
+                color: var(--catppuccin-lavender);
+            }
+
+            // label
+            &.hh20 {
+                color: var(--catppuccin-flamingo);
+            }
+
+            // diff.addition
+            &.hh21 {
+                color: var(--catppuccin-green);
+            }
+
+            // diff.deletion
+            &.hh22 {
+                color: var(--catppuccin-red);
+            }
+
+            // number
+            &.hh23 {
+                color: var(--catppuccin-peach);
+            }
+
+            // text.literal
+            &.hh24 {
+                color: var(--catppuccin-text);
+            }
+
+            // text.emphasis
+            &.hh25 {
+                font-style: italic;
+            }
+
+            // text.strong
+            &.hh26 {
+                font-weight: bold;
+            }
+
+            // text.uri
+            &.hh27 {
+                color: var(--catppuccin-rosewater);
+                text-decoration: underline;
+            }
+
+            // text.reference
+            &.hh28 {
+                color: var(--catppuccin-lavender);
+            }
+
+            // string.escape
+            &.hh29 {
+                color: var(--catppuccin-pink);
+            }
+
+            // text.title
+            &.hh30 {
+                color: var(--catppuccin-sky);
+                font-weight: bold;
+            }
+
+            // punctuation.special
+            &.hh31 {
+                font-weight: bold;
+            }
+
+            // text.strikethrough
+            &.hh32 {
+                text-decoration: line-through;
+            }
+        }
+    }
+}
