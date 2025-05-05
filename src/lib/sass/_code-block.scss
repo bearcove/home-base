@@ -52,7 +52,7 @@ figure.code-block {
         overflow-x: auto;
         position: relative;
         text-size-adjust: none;
-        font-weight: 100;
+        font-weight: 400;
         font-size: var(--font-code-size);
         line-height: 1.4;
         white-space: pre;
@@ -119,7 +119,7 @@ figure.code-block {
             &.hh4,
             &.hh2 {
                 color: var(--catppuccin-mauve);
-                font-weight: 120;
+                font-weight: 700;
             }
 
             // operator
