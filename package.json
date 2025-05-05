@@ -1,6 +1,6 @@
 {
     "name": "@bearcove/home-base",
-    "version": "9.14.0",
+    "version": "9.15.0",
     "license": "MIT",
     "files": [
         "dist",
