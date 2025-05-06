@@ -70,17 +70,6 @@ code {
     i {
         font-style: normal;
 
-        &.b {
-            // bold weight
-            font-weight: bold;
-            filter: brightness(1.16);
-        }
-
-        &.l {
-            // faint weight
-            filter: brightness(0.69);
-        }
-
         &.u {
             text-decoration: underline;
         }
