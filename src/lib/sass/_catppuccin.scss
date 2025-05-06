@@ -1,123 +1,123 @@
 @use "sass:map";
 $mocha: (
-  rosewater: #f5e0dc,
-  flamingo: #f2cdcd,
-  pink: #f5c2e7,
-  mauve: #cba6f7,
-  red: #f38ba8,
-  maroon: #eba0ac,
-  peach: #fab387,
-  yellow: #f9e2af,
-  green: #a6e3a1,
-  teal: #94e2d5,
-  sky: #89dceb,
-  sapphire: #74c7ec,
-  blue: #89b4fa,
-  lavender: #b4befe,
-  text: #cdd6f4,
-  subtext1: #bac2de,
-  surface1: #45475a,
+    rosewater: #f5e0dc,
+    flamingo: #f2cdcd,
+    pink: #f5c2e7,
+    mauve: #cba6f7,
+    red: #f38ba8,
+    maroon: #eba0ac,
+    peach: #fab387,
+    yellow: #f9e2af,
+    green: #a6e3a1,
+    teal: #94e2d5,
+    sky: #89dceb,
+    sapphire: #74c7ec,
+    blue: #89b4fa,
+    lavender: #b4befe,
+    text: #cdd6f4,
+    subtext1: #bac2de,
+    surface1: #45475a,
 );
 
 $mocha-term: (
-  fg-blk: map.get($mocha, surface1),
-  fg-red: map.get($mocha, red),
-  fg-grn: map.get($mocha, green),
-  fg-ylw: map.get($mocha, yellow),
-  fg-blu: map.get($mocha, blue),
-  fg-mag: map.get($mocha, pink),
-  fg-cyn: map.get($mocha, teal),
-  fg-wht: map.get($mocha, subtext1),
-  bg-blk: map.get($mocha, surface1),
-  bg-red: map.get($mocha, red),
-  bg-grn: map.get($mocha, green),
-  bg-ylw: map.get($mocha, yellow),
-  bg-blu: map.get($mocha, blue),
-  bg-mag: map.get($mocha, pink),
-  bg-cyn: map.get($mocha, teal),
-  bg-wht: map.get($mocha, subtext1),
+    fg-blk: map.get($mocha, surface1),
+    fg-red: map.get($mocha, red),
+    fg-grn: map.get($mocha, green),
+    fg-ylw: map.get($mocha, yellow),
+    fg-blu: map.get($mocha, blue),
+    fg-mag: map.get($mocha, pink),
+    fg-cyn: map.get($mocha, teal),
+    fg-wht: map.get($mocha, subtext1),
+    bg-blk: map.get($mocha, surface1),
+    bg-red: map.get($mocha, red),
+    bg-grn: map.get($mocha, green),
+    bg-ylw: map.get($mocha, yellow),
+    bg-blu: map.get($mocha, blue),
+    bg-mag: map.get($mocha, pink),
+    bg-cyn: map.get($mocha, teal),
+    bg-wht: map.get($mocha, subtext1),
 );
 
 $latte: (
-  rosewater: #dc8a78,
-  flamingo: #dd7878,
-  pink: #ea76cb,
-  mauve: #8839ef,
-  red: #d20f39,
-  maroon: #e64553,
-  peach: #fe640b,
-  yellow: #df8e1d,
-  green: #40a02b,
-  teal: #179299,
-  sky: #04a5e5,
-  sapphire: #209fb5,
-  blue: #1e66f5,
-  lavender: #7287fd,
-  text: #4c4f69,
-  subtext1: #5c5f77,
-  surface1: #bcc0cc,
+    rosewater: #dc8a78,
+    flamingo: #dd7878,
+    pink: #ea76cb,
+    mauve: #8839ef,
+    red: #d20f39,
+    maroon: #e64553,
+    peach: #fe640b,
+    yellow: #df8e1d,
+    green: #40a02b,
+    teal: #179299,
+    sky: #04a5e5,
+    sapphire: #209fb5,
+    blue: #1e66f5,
+    lavender: #7287fd,
+    text: #4c4f69,
+    subtext1: #5c5f77,
+    surface1: #bcc0cc,
 );
 
 $latte-term: (
-  fg-blk: map.get($latte, surface1),
-  fg-red: map.get($latte, red),
-  fg-grn: map.get($latte, green),
-  fg-ylw: map.get($latte, yellow),
-  fg-blu: map.get($latte, blue),
-  fg-mag: map.get($latte, pink),
-  fg-cyn: map.get($latte, teal),
-  fg-wht: map.get($latte, subtext1),
-  bg-blk: map.get($latte, surface1),
-  bg-red: map.get($latte, red),
-  bg-grn: map.get($latte, green),
-  bg-ylw: map.get($latte, yellow),
-  bg-blu: map.get($latte, blue),
-  bg-mag: map.get($latte, pink),
-  bg-cyn: map.get($latte, teal),
-  bg-wht: map.get($latte, subtext1),
+    fg-blk: map.get($latte, surface1),
+    fg-red: map.get($latte, red),
+    fg-grn: map.get($latte, green),
+    fg-ylw: map.get($latte, yellow),
+    fg-blu: map.get($latte, blue),
+    fg-mag: map.get($latte, pink),
+    fg-cyn: map.get($latte, teal),
+    fg-wht: map.get($latte, subtext1),
+    bg-blk: map.get($latte, surface1),
+    bg-red: map.get($latte, red),
+    bg-grn: map.get($latte, green),
+    bg-ylw: map.get($latte, yellow),
+    bg-blu: map.get($latte, blue),
+    bg-mag: map.get($latte, pink),
+    bg-cyn: map.get($latte, teal),
+    bg-wht: map.get($latte, subtext1),
 );
 
 $light-dark: (
-  rosewater: light-dark(map.get($latte, rosewater), map.get($mocha, rosewater)),
-  flamingo: light-dark(map.get($latte, flamingo), map.get($mocha, flamingo)),
-  pink: light-dark(map.get($latte, pink), map.get($mocha, pink)),
-  mauve: light-dark(map.get($latte, mauve), map.get($mocha, mauve)),
-  red: light-dark(map.get($latte, red), map.get($mocha, red)),
-  maroon: light-dark(map.get($latte, maroon), map.get($mocha, maroon)),
-  peach: light-dark(map.get($latte, peach), map.get($mocha, peach)),
-  yellow: light-dark(map.get($latte, yellow), map.get($mocha, yellow)),
-  green: light-dark(map.get($latte, green), map.get($mocha, green)),
-  teal: light-dark(map.get($latte, teal), map.get($mocha, teal)),
-  sky: light-dark(map.get($latte, sky), map.get($mocha, sky)),
-  sapphire: light-dark(map.get($latte, sapphire), map.get($mocha, sapphire)),
-  blue: light-dark(map.get($latte, blue), map.get($mocha, blue)),
-  lavender: light-dark(map.get($latte, lavender), map.get($mocha, lavender)),
-  text: light-dark(map.get($latte, text), map.get($mocha, text)),
-  subtext1: light-dark(map.get($latte, subtext1), map.get($mocha, subtext1)),
-  surface1: light-dark(map.get($latte, surface1), map.get($mocha, surface1)),
+    rosewater: light-dark(map.get($latte, rosewater), map.get($mocha, rosewater)),
+    flamingo: light-dark(map.get($latte, flamingo), map.get($mocha, flamingo)),
+    pink: light-dark(map.get($latte, pink), map.get($mocha, pink)),
+    mauve: light-dark(map.get($latte, mauve), map.get($mocha, mauve)),
+    red: light-dark(map.get($latte, red), map.get($mocha, red)),
+    maroon: light-dark(map.get($latte, maroon), map.get($mocha, maroon)),
+    peach: light-dark(map.get($latte, peach), map.get($mocha, peach)),
+    yellow: light-dark(map.get($latte, yellow), map.get($mocha, yellow)),
+    green: light-dark(map.get($latte, green), map.get($mocha, green)),
+    teal: light-dark(map.get($latte, teal), map.get($mocha, teal)),
+    sky: light-dark(map.get($latte, sky), map.get($mocha, sky)),
+    sapphire: light-dark(map.get($latte, sapphire), map.get($mocha, sapphire)),
+    blue: light-dark(map.get($latte, blue), map.get($mocha, blue)),
+    lavender: light-dark(map.get($latte, lavender), map.get($mocha, lavender)),
+    text: light-dark(map.get($latte, text), map.get($mocha, text)),
+    subtext1: light-dark(map.get($latte, subtext1), map.get($mocha, subtext1)),
+    surface1: light-dark(map.get($latte, surface1), map.get($mocha, surface1)),
 );
 
 $light-dark-term: (
-  fg-blk: light-dark(map.get($latte-term, fg-blk), map.get($mocha-term, fg-blk)),
-  fg-red: light-dark(map.get($latte-term, fg-red), map.get($mocha-term, fg-red)),
-  fg-grn: light-dark(map.get($latte-term, fg-grn), map.get($mocha-term, fg-grn)),
-  fg-ylw: light-dark(map.get($latte-term, fg-ylw), map.get($mocha-term, fg-ylw)),
-  fg-blu: light-dark(map.get($latte-term, fg-blu), map.get($mocha-term, fg-blu)),
-  fg-mag: light-dark(map.get($latte-term, fg-mag), map.get($mocha-term, fg-mag)),
-  fg-cyn: light-dark(map.get($latte-term, fg-cyn), map.get($mocha-term, fg-cyn)),
-  fg-wht: light-dark(map.get($latte-term, fg-wht), map.get($mocha-term, fg-wht)),
-  bg-blk: light-dark(map.get($latte-term, bg-blk), map.get($mocha-term, bg-blk)),
-  bg-red: light-dark(map.get($latte-term, bg-red), map.get($mocha-term, bg-red)),
-  bg-grn: light-dark(map.get($latte-term, bg-grn), map.get($mocha-term, bg-grn)),
-  bg-ylw: light-dark(map.get($latte-term, bg-ylw), map.get($mocha-term, bg-ylw)),
-  bg-blu: light-dark(map.get($latte-term, bg-blu), map.get($mocha-term, bg-blu)),
-  bg-mag: light-dark(map.get($latte-term, bg-mag), map.get($mocha-term, bg-mag)),
-  bg-cyn: light-dark(map.get($latte-term, bg-cyn), map.get($mocha-term, bg-cyn)),
-  bg-wht: light-dark(map.get($latte-term, bg-wht), map.get($mocha-term, bg-wht)),
+    fg-blk: light-dark(map.get($latte-term, fg-blk), map.get($mocha-term, fg-blk)),
+    fg-red: light-dark(map.get($latte-term, fg-red), map.get($mocha-term, fg-red)),
+    fg-grn: light-dark(map.get($latte-term, fg-grn), map.get($mocha-term, fg-grn)),
+    fg-ylw: light-dark(map.get($latte-term, fg-ylw), map.get($mocha-term, fg-ylw)),
+    fg-blu: light-dark(map.get($latte-term, fg-blu), map.get($mocha-term, fg-blu)),
+    fg-mag: light-dark(map.get($latte-term, fg-mag), map.get($mocha-term, fg-mag)),
+    fg-cyn: light-dark(map.get($latte-term, fg-cyn), map.get($mocha-term, fg-cyn)),
+    fg-wht: light-dark(map.get($latte-term, fg-wht), map.get($mocha-term, fg-wht)),
+    bg-blk: light-dark(map.get($latte-term, bg-blk), map.get($mocha-term, bg-blk)),
+    bg-red: light-dark(map.get($latte-term, bg-red), map.get($mocha-term, bg-red)),
+    bg-grn: light-dark(map.get($latte-term, bg-grn), map.get($mocha-term, bg-grn)),
+    bg-ylw: light-dark(map.get($latte-term, bg-ylw), map.get($mocha-term, bg-ylw)),
+    bg-blu: light-dark(map.get($latte-term, bg-blu), map.get($mocha-term, bg-blu)),
+    bg-mag: light-dark(map.get($latte-term, bg-mag), map.get($mocha-term, bg-mag)),
+    bg-cyn: light-dark(map.get($latte-term, bg-cyn), map.get($mocha-term, bg-cyn)),
+    bg-wht: light-dark(map.get($latte-term, bg-wht), map.get($mocha-term, bg-wht)),
 );
 
 :root {
-  --fg-blk: #{map.get($light-dark-term, fg-blk)};
+    /* --fg-blk: #{map.get($light-dark-term, fg-blk)};
   --fg-red: #{map.get($light-dark-term, fg-red)};
   --fg-grn: #{map.get($light-dark-term, fg-grn)};
   --fg-ylw: #{map.get($light-dark-term, fg-ylw)};
@@ -132,23 +132,23 @@ $light-dark-term: (
   --bg-blu: #{map.get($light-dark-term, bg-blu)};
   --bg-mag: #{map.get($light-dark-term, bg-mag)};
   --bg-cyn: #{map.get($light-dark-term, bg-cyn)};
-  --bg-wht: #{map.get($light-dark-term, bg-wht)};
+  --bg-wht: #{map.get($light-dark-term, bg-wht)}; */
 
-  --catppuccin-rosewater: #{map.get($light-dark, rosewater)};
-  --catppuccin-flamingo: #{map.get($light-dark, flamingo)};
-  --catppuccin-pink: #{map.get($light-dark, pink)};
-  --catppuccin-mauve: #{map.get($light-dark, mauve)};
-  --catppuccin-red: #{map.get($light-dark, red)};
-  --catppuccin-maroon: #{map.get($light-dark, maroon)};
-  --catppuccin-peach: #{map.get($light-dark, peach)};
-  --catppuccin-yellow: #{map.get($light-dark, yellow)};
-  --catppuccin-green: #{map.get($light-dark, green)};
-  --catppuccin-teal: #{map.get($light-dark, teal)};
-  --catppuccin-sky: #{map.get($light-dark, sky)};
-  --catppuccin-sapphire: #{map.get($light-dark, sapphire)};
-  --catppuccin-blue: #{map.get($light-dark, blue)};
-  --catppuccin-lavender: #{map.get($light-dark, lavender)};
-  --catppuccin-text: #{map.get($light-dark, text)};
-  --catppuccin-subtext1: #{map.get($light-dark, subtext1)};
-  --catppuccin-surface1: #{map.get($light-dark, surface1)};
+    --catppuccin-rosewater: #{map.get($light-dark, rosewater)};
+    --catppuccin-flamingo: #{map.get($light-dark, flamingo)};
+    --catppuccin-pink: #{map.get($light-dark, pink)};
+    --catppuccin-mauve: #{map.get($light-dark, mauve)};
+    --catppuccin-red: #{map.get($light-dark, red)};
+    --catppuccin-maroon: #{map.get($light-dark, maroon)};
+    --catppuccin-peach: #{map.get($light-dark, peach)};
+    --catppuccin-yellow: #{map.get($light-dark, yellow)};
+    --catppuccin-green: #{map.get($light-dark, green)};
+    --catppuccin-teal: #{map.get($light-dark, teal)};
+    --catppuccin-sky: #{map.get($light-dark, sky)};
+    --catppuccin-sapphire: #{map.get($light-dark, sapphire)};
+    --catppuccin-blue: #{map.get($light-dark, blue)};
+    --catppuccin-lavender: #{map.get($light-dark, lavender)};
+    --catppuccin-text: #{map.get($light-dark, text)};
+    --catppuccin-subtext1: #{map.get($light-dark, subtext1)};
+    --catppuccin-surface1: #{map.get($light-dark, surface1)};
 }

@@ -1,0 +1,154 @@
+@use "sass:map";
+$melange-dark: (
+    rosewater: #ea6962,
+    flamingo: #ea6962,
+    pink: #d3869b,
+    mauve: #d3869b,
+    red: #ea6962,
+    maroon: #bd6f3e,
+    peach: #e78a4e,
+    yellow: #d8a657,
+    green: #a9b665,
+    teal: #89b482,
+    sky: #89b482,
+    sapphire: #7daea3,
+    blue: #7daea3,
+    lavender: #7daea3,
+    text: #ddc7a1,
+    subtext1: #c0b196,
+    surface1: #504945,
+);
+
+$melange-light: (
+    rosewater: #c14a4a,
+    flamingo: #c14a4a,
+    pink: #945e80,
+    mauve: #945e80,
+    red: #c14a4a,
+    maroon: #c35e0a,
+    peach: #c35e0a,
+    yellow: #b47109,
+    green: #6c782e,
+    teal: #4c7a5d,
+    sky: #4c7a5d,
+    sapphire: #446e64,
+    blue: #446e64,
+    lavender: #446e64,
+    text: #39260e,
+    subtext1: #4f3829,
+    surface1: #c8b99f,
+);
+
+$melange-dark-term: (
+    fg-blk: map.get($melange-dark, surface1),
+    fg-red: map.get($melange-dark, red),
+    fg-grn: map.get($melange-dark, green),
+    fg-ylw: map.get($melange-dark, yellow),
+    fg-blu: map.get($melange-dark, blue),
+    fg-mag: map.get($melange-dark, pink),
+    fg-cyn: map.get($melange-dark, teal),
+    fg-wht: map.get($melange-dark, subtext1),
+    bg-blk: map.get($melange-dark, surface1),
+    bg-red: map.get($melange-dark, red),
+    bg-grn: map.get($melange-dark, green),
+    bg-ylw: map.get($melange-dark, yellow),
+    bg-blu: map.get($melange-dark, blue),
+    bg-mag: map.get($melange-dark, pink),
+    bg-cyn: map.get($melange-dark, teal),
+    bg-wht: map.get($melange-dark, subtext1),
+);
+
+$melange-light-term: (
+    fg-blk: map.get($melange-light, surface1),
+    fg-red: map.get($melange-light, red),
+    fg-grn: map.get($melange-light, green),
+    fg-ylw: map.get($melange-light, yellow),
+    fg-blu: map.get($melange-light, blue),
+    fg-mag: map.get($melange-light, pink),
+    fg-cyn: map.get($melange-light, teal),
+    fg-wht: map.get($melange-light, subtext1),
+    bg-blk: map.get($melange-light, surface1),
+    bg-red: map.get($melange-light, red),
+    bg-grn: map.get($melange-light, green),
+    bg-ylw: map.get($melange-light, yellow),
+    bg-blu: map.get($melange-light, blue),
+    bg-mag: map.get($melange-light, pink),
+    bg-cyn: map.get($melange-light, teal),
+    bg-wht: map.get($melange-light, subtext1),
+);
+
+$melange-light-dark: (
+    rosewater: light-dark(map.get($melange-light, rosewater), map.get($melange-dark, rosewater)),
+    flamingo: light-dark(map.get($melange-light, flamingo), map.get($melange-dark, flamingo)),
+    pink: light-dark(map.get($melange-light, pink), map.get($melange-dark, pink)),
+    mauve: light-dark(map.get($melange-light, mauve), map.get($melange-dark, mauve)),
+    red: light-dark(map.get($melange-light, red), map.get($melange-dark, red)),
+    maroon: light-dark(map.get($melange-light, maroon), map.get($melange-dark, maroon)),
+    peach: light-dark(map.get($melange-light, peach), map.get($melange-dark, peach)),
+    yellow: light-dark(map.get($melange-light, yellow), map.get($melange-dark, yellow)),
+    green: light-dark(map.get($melange-light, green), map.get($melange-dark, green)),
+    teal: light-dark(map.get($melange-light, teal), map.get($melange-dark, teal)),
+    sky: light-dark(map.get($melange-light, sky), map.get($melange-dark, sky)),
+    sapphire: light-dark(map.get($melange-light, sapphire), map.get($melange-dark, sapphire)),
+    blue: light-dark(map.get($melange-light, blue), map.get($melange-dark, blue)),
+    lavender: light-dark(map.get($melange-light, lavender), map.get($melange-dark, lavender)),
+    text: light-dark(map.get($melange-light, text), map.get($melange-dark, text)),
+    subtext1: light-dark(map.get($melange-light, subtext1), map.get($melange-dark, subtext1)),
+    surface1: light-dark(map.get($melange-light, surface1), map.get($melange-dark, surface1)),
+);
+
+$melange-light-dark-term: (
+    fg-blk: light-dark(map.get($melange-light-term, fg-blk), map.get($melange-dark-term, fg-blk)),
+    fg-red: light-dark(map.get($melange-light-term, fg-red), map.get($melange-dark-term, fg-red)),
+    fg-grn: light-dark(map.get($melange-light-term, fg-grn), map.get($melange-dark-term, fg-grn)),
+    fg-ylw: light-dark(map.get($melange-light-term, fg-ylw), map.get($melange-dark-term, fg-ylw)),
+    fg-blu: light-dark(map.get($melange-light-term, fg-blu), map.get($melange-dark-term, fg-blu)),
+    fg-mag: light-dark(map.get($melange-light-term, fg-mag), map.get($melange-dark-term, fg-mag)),
+    fg-cyn: light-dark(map.get($melange-light-term, fg-cyn), map.get($melange-dark-term, fg-cyn)),
+    fg-wht: light-dark(map.get($melange-light-term, fg-wht), map.get($melange-dark-term, fg-wht)),
+    bg-blk: light-dark(map.get($melange-light-term, bg-blk), map.get($melange-dark-term, bg-blk)),
+    bg-red: light-dark(map.get($melange-light-term, bg-red), map.get($melange-dark-term, bg-red)),
+    bg-grn: light-dark(map.get($melange-light-term, bg-grn), map.get($melange-dark-term, bg-grn)),
+    bg-ylw: light-dark(map.get($melange-light-term, bg-ylw), map.get($melange-dark-term, bg-ylw)),
+    bg-blu: light-dark(map.get($melange-light-term, bg-blu), map.get($melange-dark-term, bg-blu)),
+    bg-mag: light-dark(map.get($melange-light-term, bg-mag), map.get($melange-dark-term, bg-mag)),
+    bg-cyn: light-dark(map.get($melange-light-term, bg-cyn), map.get($melange-dark-term, bg-cyn)),
+    bg-wht: light-dark(map.get($melange-light-term, bg-wht), map.get($melange-dark-term, bg-wht)),
+);
+
+:root {
+    --fg-blk: #{map.get($melange-light-dark-term, fg-blk)};
+    --fg-red: #{map.get($melange-light-dark-term, fg-red)};
+    --fg-grn: #{map.get($melange-light-dark-term, fg-grn)};
+    --fg-ylw: #{map.get($melange-light-dark-term, fg-ylw)};
+    --fg-blu: #{map.get($melange-light-dark-term, fg-blu)};
+    --fg-mag: #{map.get($melange-light-dark-term, fg-mag)};
+    --fg-cyn: #{map.get($melange-light-dark-term, fg-cyn)};
+    --fg-wht: #{map.get($melange-light-dark-term, fg-wht)};
+    --bg-blk: #{map.get($melange-light-dark-term, bg-blk)};
+    --bg-red: #{map.get($melange-light-dark-term, bg-red)};
+    --bg-grn: #{map.get($melange-light-dark-term, bg-grn)};
+    --bg-ylw: #{map.get($melange-light-dark-term, bg-ylw)};
+    --bg-blu: #{map.get($melange-light-dark-term, bg-blu)};
+    --bg-mag: #{map.get($melange-light-dark-term, bg-mag)};
+    --bg-cyn: #{map.get($melange-light-dark-term, bg-cyn)};
+    --bg-wht: #{map.get($melange-light-dark-term, bg-wht)};
+
+    --melange-rosewater: #{map.get($melange-light-dark, rosewater)};
+    --melange-flamingo: #{map.get($melange-light-dark, flamingo)};
+    --melange-pink: #{map.get($melange-light-dark, pink)};
+    --melange-mauve: #{map.get($melange-light-dark, mauve)};
+    --melange-red: #{map.get($melange-light-dark, red)};
+    --melange-maroon: #{map.get($melange-light-dark, maroon)};
+    --melange-peach: #{map.get($melange-light-dark, peach)};
+    --melange-yellow: #{map.get($melange-light-dark, yellow)};
+    --melange-green: #{map.get($melange-light-dark, green)};
+    --melange-teal: #{map.get($melange-light-dark, teal)};
+    --melange-sky: #{map.get($melange-light-dark, sky)};
+    --melange-sapphire: #{map.get($melange-light-dark, sapphire)};
+    --melange-blue: #{map.get($melange-light-dark, blue)};
+    --melange-lavender: #{map.get($melange-light-dark, lavender)};
+    --melange-text: #{map.get($melange-light-dark, text)};
+    --melange-subtext1: #{map.get($melange-light-dark, subtext1)};
+    --melange-surface1: #{map.get($melange-light-dark, surface1)};
+}

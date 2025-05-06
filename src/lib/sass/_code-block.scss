@@ -47,7 +47,7 @@ figure.code-block {
 
     code {
         padding: 0.6rem;
-        color: var(--catppuccin-text);
+        color: var(--melange-text);
         border: 1px solid var(--code-border-color);
         overflow-x: auto;
         position: relative;
@@ -101,102 +101,102 @@ code {
             font-size: 0.75rem;
             border-radius: 0.2rem;
             vertical-align: middle;
-            background: var(--catppuccin-surface1);
-            border-color: var(--catppuccin-subtext1);
-            color: var(--catppuccin-text);
+            background: var(--melange-surface1);
+            border-color: var(--melange-subtext1);
+            color: var(--melange-text);
         }
 
         // Syntax highlighting colors
         // constant and number
         &.hh1,
         &.hh23 {
-            color: var(--catppuccin-peach);
+            color: var(--melange-peach);
         }
 
         // function
         &.hh3 {
-            color: var(--catppuccin-sapphire);
+            color: var(--melange-sapphire);
         }
 
         // keyword and function.builtin
         &.hh4,
         &.hh2 {
-            color: var(--catppuccin-mauve);
+            color: var(--melange-mauve);
             font-weight: 700;
         }
 
         // operator
         &.hh5 {
-            color: var(--catppuccin-sky);
+            color: var(--melange-sky);
         }
 
         // property
         &.hh6 {
-            color: var(--catppuccin-teal);
+            color: var(--melange-teal);
         }
 
         // string and string.special
         &.hh10,
         &.hh11 {
-            color: var(--catppuccin-green);
+            color: var(--melange-green);
         }
 
         // type and type.builtin
         &.hh13,
         &.hh14 {
-            color: var(--catppuccin-yellow);
+            color: var(--melange-yellow);
         }
 
         // variable
         &.hh15 {
-            color: var(--catppuccin-text);
+            color: var(--melange-text);
         }
 
         // variable.builtin
         &.hh16 {
-            color: var(--catppuccin-red);
+            color: var(--melange-red);
         }
 
         // variable.parameter
         &.hh17 {
-            color: var(--catppuccin-maroon);
+            color: var(--melange-maroon);
         }
 
         // comment, punctuation
         &.hh18,
         &.hh7 {
-            color: var(--catppuccin-subtext1);
+            color: var(--melange-subtext1);
         }
 
         // punctuation.delimiter, and punctuation.bracket
         &.hh9,
         &.hh8 {
-            color: var(--catppuccin-lavender);
+            color: var(--melange-lavender);
         }
 
         // label
         &.hh20 {
-            color: var(--catppuccin-flamingo);
+            color: var(--melange-flamingo);
         }
 
         // diff.addition
         &.hh21 {
-            color: var(--catppuccin-green);
+            color: var(--melange-green);
         }
 
         // diff.deletion
         &.hh22 {
-            color: var(--catppuccin-red);
+            color: var(--melange-red);
         }
 
         // number
         &.hh23 {
-            color: var(--catppuccin-peach);
+            color: var(--melange-peach);
         }
 
         // text.literal
         &.hh24 {
-            color: var(--catppuccin-text);
+            color: var(--melange-text);
         }
 
         // text.emphasis
@@ -211,23 +211,23 @@ code {
 
         // text.uri
         &.hh27 {
-            color: var(--catppuccin-rosewater);
+            color: var(--melange-rosewater);
             text-decoration: underline;
         }
 
         // text.reference
         &.hh28 {
-            color: var(--catppuccin-lavender);
+            color: var(--melange-lavender);
         }
 
         // string.escape
         &.hh29 {
-            color: var(--catppuccin-pink);
+            color: var(--melange-pink);
         }
 
         // text.title
         &.hh30 {
-            color: var(--catppuccin-sky);
+            color: var(--melange-sky);
             font-weight: bold;
         }
 
