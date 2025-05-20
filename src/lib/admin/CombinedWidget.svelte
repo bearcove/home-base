@@ -38,28 +38,28 @@
 
         ws.onmessage = (event: MessageEvent) => {
             const m: DeployMessage = JSON.parse(event.data);
-            if ("logMessage" in m) {
-                logs.push(m.logMessage);
-            } else if ("assetProgress" in m) {
-                progress = (m.assetProgress.uploaded / m.assetProgress.total) * 100;
-            } else if ("deployComplete" in m) {
+            if ("LogMessage" in m) {
+                logs.push(m.LogMessage);
+            } else if ("AssetProgress" in m) {
+                progress = (m.AssetProgress.uploaded / m.AssetProgress.total) * 100;
+            } else if ("DeployComplete" in m) {
                 done = true;
                 const end = Date.now();
                 const duration = (end - start) / 1000;
                 logs.push({
                     level: "info",
-                    message: `Deployment ${m.deployComplete.complete ? "completed" : "failed"} in ${duration.toFixed(2)} seconds.`,
+                    message: `Deployment ${m.DeployComplete.complete ? "completed" : "failed"} in ${duration.toFixed(2)} seconds.`,
                 });
                 logs.push({
                     level: "info",
                     message: "Check out",
-                    url: `https://${m.deployComplete.domain}`,
+                    url: `https://${m.DeployComplete.domain}`,
                 });
                 ws.onerror = null;
                 ws.onclose = null;
                 progress = 100;
                 deploymentComplete = true;
-                if (m.deployComplete.complete) {
+                if (m.DeployComplete.complete) {
                     confetti({
                         disableForReducedMotion: true,
                     });
@@ -98,31 +98,31 @@
 
         ws.onmessage = (event: MessageEvent) => {
             const m: ValidationMessage = JSON.parse(event.data);
-            if ("logMessage" in m) {
-                logs.push(m.logMessage);
-            } else if ("routeResult" in m) {
+            if ("LogMessage" in m) {
+                logs.push(m.LogMessage);
+            } else if ("RouteResult" in m) {
                 progress += 0.2;
                 logs.push({
                     level: "info",
-                    message: `HTTP ${m.routeResult.status}`,
-                    url: m.routeResult.url,
+                    message: `HTTP ${m.RouteResult.status}`,
+                    url: m.RouteResult.url,
                 });
-            } else if ("badLink" in m) {
+            } else if ("BadLink" in m) {
                 logs.push({
                     level: "warn",
-                    message: `Bad link in ${m.badLink.route}: ${m.badLink.reason}`,
-                    url: m.badLink.href,
+                    message: `Bad link in ${m.BadLink.route}: ${m.BadLink.reason}`,
+                    url: m.BadLink.href,
                 });
-            } else if ("mathError" in m) {
+            } else if ("MathError" in m) {
                 logs.push({
                     level: "error",
-                    message: `Math errors found in ${m.mathError.route}`,
-                    url: m.mathError.route,
+                    message: `Math errors found in ${m.MathError.route}`,
+                    url: m.MathError.route,
                 });
-            } else if ("validationComplete" in m) {
+            } else if ("ValidationComplete" in m) {
                 logs.push({
                     level: "info",
-                    message: `Validation complete: ${m.validationComplete.num_errors} errors`,
+                    message: `Validation complete: ${m.ValidationComplete.num_errors} errors`,
                 });
                 progress = 100;
             }
