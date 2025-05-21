@@ -125,14 +125,14 @@
             if (isNaN(byte_offset)) return null;
 
             const action: api.Action =
-                event.clientX < target.offsetLeft + target.offsetWidth / 2 ? "replace" : "append";
+                event.clientX < target.offsetLeft + target.offsetWidth / 2 ? "Replace" : "Append";
 
             return { target, byte_offset, action };
         } else {
             // are we hovering over the title?
             let target = (event.target as HTMLElement).closest(".page-title") as HTMLElement | null;
             if (target) {
-                const action: api.Action = "set_thumb";
+                const action: api.Action = "SetThumb";
                 return { target, byte_offset: 0, action };
             }
         }
@@ -387,7 +387,7 @@
 
         let nameIsFixed = false;
 
-        if (targetAndAction.action == "set_thumb") {
+        if (targetAndAction.action == "SetThumb") {
             // file name is fixed then
             name = "_thumb";
             nameIsFixed = true;
@@ -396,7 +396,7 @@
             name = asset.name.replace(/\.[^.]+$/, "");
         }
 
-        if (targetAndAction.action === "replace") {
+        if (targetAndAction.action === "Replace") {
             let mediaEl = targetAndAction.target.querySelector(
                 '[data-kind="media"]',
             ) as HTMLElement | null;
@@ -595,7 +595,7 @@
                         }
                     }}
                     placeholder="imagename"
-                    disabled={stage.stage === "uploading" && stage.plan.action === "set_thumb"}
+                    disabled={stage.stage === "uploading" && stage.plan.action === "SetThumb"}
                 />
                 <span class="fixed">
                     {#if suffix}
@@ -658,7 +658,7 @@
                                 : ""}
                         </span>
                     {:else}
-                        Press <code>⌘↵</code> to {stage.plan.action === "replace"
+                        Press <code>⌘↵</code> to {stage.plan.action === "Replace"
                             ? "replace"
                             : "insert"}
                         <br />
