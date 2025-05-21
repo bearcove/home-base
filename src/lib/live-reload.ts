@@ -25,7 +25,7 @@ export function setupLiveReload(): void {
     // emit an event so other elements of the page can react
     let event = new CustomEvent("revision-error", {
       detail: {
-        error: ev.revision_error,
+        error: ev.RevisionError,
       },
     });
     home.log("Dispatching ", event);
@@ -57,7 +57,7 @@ export function setupLiveReload(): void {
           home.error(`Error refreshing page:`, err);
         });
       } else if (isRevisionError(data)) {
-        home.error(`Revision error: ${data.revision_error}`);
+        home.error(`Revision error: ${data.RevisionError}`);
         onRevisionError(data).catch((err) => {
           home.error(`Error handling revision error: ${err}`);
         });
