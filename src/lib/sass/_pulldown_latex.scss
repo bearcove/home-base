@@ -48,7 +48,7 @@ mtr:last-child:has(> mtd:empty)::after {
   display: none;
 }
 
-mtable.menv-alignlike > mtr > mtd:nth-child(odd),
+/* mtable.menv-alignlike > mtr > mtd:nth-child(odd), */
 mtable.menv-cells-right > mtr > mtd,
 mtable.menv-multline > mtr > mtd:last-child,
 mtd.cell-right {
