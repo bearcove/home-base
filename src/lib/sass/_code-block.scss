@@ -151,9 +151,9 @@ code {
             color: var(--melange-maroon);
         }
 
-        // comment, punctuation
+        // comment, punctuation, spell
         &.hh18,
-        &.hh7 {
+        &.hh7, &.hh33 {
             color: var(--melange-subtext1);
         }
 
